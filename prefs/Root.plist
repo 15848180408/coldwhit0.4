@@ -3,24 +3,42 @@
 <plist version="1.0">
 <array>
     <dict>
-        <key>cell</key><string>PSGroupCell</string>
-        <key>label</key><string>Cold White</string>
-        <key>footerText</key><string>右侧 = 更冷；左侧 = 更暖；0 = 原厂。</string>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>label</key>
+        <string>Cold White</string>
+        <key>footerText</key>
+        <string>右侧 = 更冷，左侧 = 更暖，0 = 原厂。</string>
     </dict>
     <dict>
-        <key>cell</key><string>PSSliderCell</string>
-        <key>label</key><string>色温</string>
-        <key>key</key><string>temperature</string>
-        <key>default</key><real>0</real>
-        <key>min</key><real>-100</real>
-        <key>max</key><real>100</real>
-        <key>showValue</key><true/>
-        <key>get</key><string>temperatureForSpecifier:</string>
-        <key>set</key><string>setTemperature:forSpecifier:</string>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>label</key>
+        <string>色温</string>
+        <key>min</key>
+        <real>-100.0</real>
+        <key>max</key>
+        <real>100.0</real>
+        <key>default</key>
+        <real>0.0</real>
+        <key>defaults</key>
+        <string>com.chatgpt.coldwhite</string>
+        <key>key</key>
+        <string>temperature</string>
+        <key>get</key>
+        <string>temperatureForSpecifier:</string>
+        <key>set</key>
+        <string>setTemperature:forSpecifier:</string>
+        <key>showValue</key>
+        <true/>
     </dict>
     <dict>
-        <key>cell</key><string>PSButtonCell</string>
-        <key>label</key><string>恢复原厂</string>
-        <key>action</key><string>resetTemperature</string>
+        <key>cell</key>
+        <string>PSButtonCell</string>
+        <key>label</key>
+        <string>恢复原厂</string>
+        <key>action</key>
+        <string>resetTemperature</string>
     </dict>
 </array>
+</plist>
